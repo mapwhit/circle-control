@@ -1,0 +1,32 @@
+{
+  "name": "map-circle-control",
+  "version": "0.0.0",
+  "description": "Draggable circle to be used with map renderer.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": "furkot/map-circle-control",
+  "license": "MIT",
+  "keywords": [
+    "map-circle-control",
+    "circle",
+    "map",
+    "drag",
+    "search"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.9.5",
+    "mocha": "^5.2.0",
+    "should": "^13.2.1"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
