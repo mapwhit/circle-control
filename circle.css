@@ -1,0 +1,51 @@
+.circle {
+  position: absolute;
+  border-radius: 100%;
+  border: solid 1px green;
+  background-color: rgba(0, 255, 0, 0.3);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.circle.dragging {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.circle .circle-handle {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 100%;
+  border: solid 1px black;
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.circle .circle-center {
+  top: 50%;
+  left: 50%;
+  cursor: move;
+}
+
+.circle .circle-north {
+  top: 0;
+  left: 50%;
+  cursor: ns-resize;
+}
+
+.circle .circle-south {
+  top: 100%;
+  left: 50%;
+  cursor: ns-resize;
+}
+
+.circle .circle-east {
+  top: 50%;
+  left: 0;
+  cursor: ew-resize;
+}
+
+.circle .circle-west {
+  top: 50%;
+  left: 100%;
+  cursor: ew-resize;
+}
