@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circle demo</title>
+  <script type="text/javascript" src="build/index.js"></script>
+  <link rel="stylesheet" href="circle.css">
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: rgba(100, 100, 100, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"></div>
+  <script type="text/javascript">
+    const makeCircle = require('map-circle-control');
+    const map = {
+      getContainer:  () => document.querySelector('.container')
+    };
+    let circle = makeCircle();
+    circle.add(map);
+    circle.center = [ 250, 200 ];
+    circle.radius = 175;
+  </script>
+</body>
+</html>
