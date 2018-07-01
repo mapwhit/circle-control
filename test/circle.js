@@ -1,4 +1,4 @@
-var makeCircle = require('../');
+var makeCircle = require('../lib/circle');
 
 describe('map-circle-control', function () {
   before(function() {
@@ -6,12 +6,10 @@ describe('map-circle-control', function () {
   });
 
   it('create DOM nodes', function () {
-    const map = {
-      getContainer:  () => document.querySelector('.container')
-    };
+    const container = document.querySelector('.container');
 
     let circle = makeCircle();
-    circle.add(map);
+    circle.addTo(container);
     circle.center = [ 250, 200 ];
     circle.radius = 175;
 

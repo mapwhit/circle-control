@@ -25,10 +25,11 @@
     const map = {
       getContainer:  () => document.querySelector('.container')
     };
-    let circle = makeCircle();
-    circle.add(map);
-    circle.center = [ 250, 200 ];
-    circle.radius = 175;
+    let circle = makeCircle({
+      center: [ 250, 200 ],
+      radius: 175
+    });
+    circle.onadded(map);
   </script>
 </body>
 </html>
