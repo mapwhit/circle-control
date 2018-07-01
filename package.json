@@ -16,7 +16,9 @@
     "drag",
     "search"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "component-emitter": "^1.2.1"
+  },
   "devDependencies": {
     "browserify": "^16.2.2",
     "jsdom": "^11.11.0",
