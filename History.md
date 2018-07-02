@@ -1,4 +1,11 @@
 
+0.2.0 / 2018-07-01
+==================
+
+ * add geoCenter and geoRadius properties
+ * add 'center-changed' and 'radius-changed' events
+ * improve visual drop feedback
+
 0.1.0 / 2018-06-30
 ==================
 
