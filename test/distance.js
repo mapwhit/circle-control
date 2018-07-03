@@ -17,11 +17,11 @@ let map = { fromGeo, toGeo };
 describe('distance', function () {
 
   it('meters to pixels', function () {
-    meters2pixels(5000, [ 150, 200 ], map).should.be.approximately(89.9321, 0.0001);
+    meters2pixels(5000, [ 150, 200 ], map).should.eql(90);
   });
 
   it('pixels to meters', function () {
-    pixels2meters(250, [ 150, 200 ], map).should.be.approximately(13899.36583, 0.0001);
+    pixels2meters(250, [ 150, 200 ], map).should.eql(13899);
   });
 
 });
