@@ -1,6 +1,6 @@
 {
   "name": "map-circle-control",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Draggable circle to be used with map renderer.",
   "author": {
     "name": "Damian Krzeminski",
