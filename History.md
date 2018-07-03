@@ -1,4 +1,10 @@
 
+0.2.1 / 2018-07-03
+==================
+
+ * round pixel and meters values
+ * use requestAnimationFrame to repaint the circle
+
 0.2.0 / 2018-07-01
 ==================
 
