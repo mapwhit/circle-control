@@ -24,21 +24,23 @@
       right: 3px;
     }
     label {
-      display: block;
+      display: flex;
       margin: .25em 0;
+      justify-content: space-between;
     }
     input {
       font-size: 16px;
       margin-left: 1em;
-      width: 10em;
+      width: 4em;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <form>
-      <label>Radius:<input name='radius' readonly></label>
-      <label>Center:<input name='center' readonly></label>
+      <label>Radius<input type='number' name='radius' value="175"></label>
+      <label>X<input type='number' name='x' value="250"></label>
+      <label>Y<input type='number' name='y' value="200"></label>
     <form>
   </div>
   <script type="text/javascript">
@@ -58,8 +60,17 @@
     });
     circle.on('center-changed', function() {
       let { center } = this;
-      form.elements.center.value = center.join(' - ');
+      form.elements.x.value = center[0];
+      form.elements.y.value = center[1];
     });
+    function onchange() {
+      let { x, y, radius } = form.elements;
+      circle.center = [ parseInt(x.value), parseInt(y.value) ];
+      circle.radius = parseInt(radius.value);
+    }
+    for(let input of form.elements) {
+      input.onchange = onchange;
+    }
   </script>
 </body>
 </html>
