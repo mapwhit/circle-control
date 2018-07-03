@@ -51,7 +51,7 @@
       center: [ 250, 200 ],
       radius: 175
     });
-    circle.onadded(map);
+    circle.onadd(map);
     circle.on('radius-changed', function() {
       let { radius } = this;
       form.elements.radius.value = radius;
