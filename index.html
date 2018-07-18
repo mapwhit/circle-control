@@ -8,13 +8,17 @@
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden;
     }
-    .container {
+    .outer {
       position: absolute;
       top: 35px;
       left: 45px;
-      width: 60vw;
+    }
+    .container {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      width: 150vw;
       height: 75vh;
       padding: 20px;
       box-sizing: border-box;
@@ -22,9 +26,9 @@
     }
     form {
       font-size: 16px;
-      position: absolute;
+      position: fixed;
       bottom: 3px;
-      right: 3px;
+      left: 3px;
     }
     label {
       display: flex;
@@ -39,19 +43,21 @@
   </style>
 </head>
 <body>
+  <div class="outer">
   <div class="container">
-    <form>
-      <label>Radius<input type='number' name='radius' value="175"></label>
-      <label>X<input type='number' name='x' value="250"></label>
-      <label>Y<input type='number' name='y' value="200"></label>
-    <form>
   </div>
+  </div>
+  <form>
+    <label>Radius<input type='number' name='radius' value="175"></label>
+    <label>X<input type='number' name='x' value="250"></label>
+    <label>Y<input type='number' name='y' value="200"></label>
+  <form>
   <script type="text/javascript">
     const makeCircle = require('map-circle-control');
     const map = {
       getContainer:  () => document.querySelector('.container')
     };
-    const form = document.querySelector('.container form');
+    const form = document.querySelector('form');
     let circle = makeCircle({
       center: [ 250, 200 ],
       radius: 175
