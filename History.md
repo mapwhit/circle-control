@@ -1,4 +1,9 @@
 
+1.0.0 / 2018-07-18
+==================
+
+ * fix circle positioning for containers with non-zero offset
+
 0.3.2 / 2018-07-17
 ==================
 
