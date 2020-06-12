@@ -22,8 +22,8 @@
 
 @media (pointer: coarse) {
   .circle .circle-handle {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     touch-action: none;
   }
 }
