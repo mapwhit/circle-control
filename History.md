@@ -1,4 +1,10 @@
 
+1.1.0 / 2020-06-12
+==================
+
+ * add touch based implementation of handle
+ * replace mocha/should with tape
+
 1.0.2 / 2018-08-18
 ==================
 
