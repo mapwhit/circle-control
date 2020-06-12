@@ -20,6 +20,14 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+@media (pointer: coarse) {
+  .circle .circle-handle {
+    width: 16px;
+    height: 16px;
+    touch-action: none;
+  }
+}
+
 .circle .circle-center {
   top: 50%;
   left: 50%;
