@@ -80,8 +80,8 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 [npm-image]: https://img.shields.io/npm/v/map-circle-control.svg
 [npm-url]: https://npmjs.org/package/map-circle-control
 
-[travis-url]: https://travis-ci.org/furkot/map-circle-control
-[travis-image]: https://img.shields.io/travis/furkot/map-circle-control.svg
+[travis-url]: https://travis-ci.com/furkot/map-circle-control
+[travis-image]: https://img.shields.io/travis/com/furkot/map-circle-control.svg
 
 [deps-image]: https://img.shields.io/david/furkot/map-circle-control.svg
 [deps-url]: https://david-dm.org/furkot/map-circle-control
