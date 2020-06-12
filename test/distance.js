@@ -1,3 +1,4 @@
+const test = require('tape');
 const { meters2pixels, pixels2meters } = require('../lib/distance');
 
 // assume we are at 60 degrees N === 200px
@@ -14,14 +15,17 @@ function fromGeo([ lat ]) {
 
 let map = { fromGeo, toGeo };
 
-describe('distance', function () {
+test('distance', function({ test }) {
 
-  it('meters to pixels', function () {
-    meters2pixels(5000, [ 150, 200 ], map).should.eql(90);
+  test('meters to pixels', function (t) {
+    t.plan(1);
+    t.equal(meters2pixels(5000, [ 150, 200 ], map), 90);
   });
 
-  it('pixels to meters', function () {
-    pixels2meters(250, [ 150, 200 ], map).should.eql(13899);
+  test('pixels to meters', function (t) {
+    t.plan(1);
+    t.equal(pixels2meters(250, [ 150, 200 ], map), 13899);
   });
 
 });
+

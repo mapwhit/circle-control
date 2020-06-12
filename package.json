@@ -21,11 +21,10 @@
   },
   "devDependencies": {
     "browserify": "^16.2.2",
-    "jsdom": "^11.11.0",
+    "jsdom": "^16.2.2",
     "jsdom-global": "^3.0.2",
     "jshint": "^2.9.5",
-    "mocha": "^5.2.0",
-    "should": "^13.2.1"
+    "tape": "~5"
   },
   "scripts": {
     "test": "make check"

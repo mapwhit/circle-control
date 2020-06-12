@@ -1,24 +1,25 @@
-var makeCircle = require('../lib/circle');
+const test = require('tape');
 
-describe('map-circle-control', function () {
-  before(function() {
-    document.body.innerHTML = '<div class="container"></div>';
-  });
+require('jsdom-global')();
 
-  it('create DOM nodes', function () {
-    const container = document.querySelector('.container');
+const makeCircle = require('../lib/circle');
 
-    let circle = makeCircle();
-    circle.addTo(container);
-    circle.center = [ 250, 200 ];
-    circle.radius = 175;
+document.body.innerHTML = '<div class="container"></div>';
+
+test('map-circle-control - create DOM nodes', function (t) {
+  const container = document.querySelector('.container');
+
+  let circle = makeCircle();
+  circle.addTo(container);
+  circle.center = [ 250, 200 ];
+  circle.radius = 175;
 
 
-    let c = document.querySelector('.container .circle');
+  let c = document.querySelector('.container .circle');
 
-    c.childNodes.should.have.length(5);
-    c.should.have.property('style');
-    c.style.should.have.property('left', '250px');
-    c.style.should.have.property('top', '200px');
-  });
+  t.plan(4);
+  t.equal(c.childNodes.length, 5, 'circle should have 5 child elements');
+  t.ok(c.style, 'circle should have style property');
+  t.equal(c.style.left, '250px');
+  t.equal(c.style.top, '200px');
 });
