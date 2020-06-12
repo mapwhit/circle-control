@@ -1,4 +1,10 @@
 
+1.1.1 / 2020-06-12
+==================
+
+ * use touch implementation whenever pointer is coarse
+ * make touch targets slightly bigger by default
+
 1.1.0 / 2020-06-12
 ==================
 
