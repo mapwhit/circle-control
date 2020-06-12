@@ -2,6 +2,8 @@ const test = require('tape');
 
 require('jsdom-global')();
 
+window.matchMedia = () => ({ matches: false });
+
 const makeCircle = require('../lib/circle');
 
 document.body.innerHTML = '<div class="container"></div>';
