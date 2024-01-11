@@ -1,4 +1,13 @@
 
+1.1.2 / 2024-01-11
+==================
+
+ * use github actions instead of Travis CI
+ * upgrade jsdom
+ * replace `tape` with `node:test`
+ * replace jshint with @pirxpilot/jshint
+ * replace browserify with esbuild
+
 1.1.1 / 2020-06-12
 ==================
 
