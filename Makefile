@@ -9,7 +9,7 @@ lint:
 	./node_modules/.bin/jshint *.js lib test
 
 test:
-	./node_modules/.bin/tape test/*js
+	node --test
 
 build/index.js: $(SRC)
 	./node_modules/.bin/esbuild \
