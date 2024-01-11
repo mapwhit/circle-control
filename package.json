@@ -22,7 +22,7 @@
   "devDependencies": {
     "@pirxpilot/jshint": "^3.0.1",
     "esbuild": "^0.19.11",
-    "jsdom": "^16.2.2",
+    "jsdom": "^23.2.0",
     "jsdom-global": "^3.0.2"
   },
   "scripts": {
