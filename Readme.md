@@ -1,7 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
-[![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
 # map-circle-control
 
@@ -77,17 +76,15 @@ circle.geoCenter = [0.1278, 51.5074]; // London
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/map-circle-control.svg
+[npm-image]: https://img.shields.io/npm/v/map-circle-control
 [npm-url]: https://npmjs.org/package/map-circle-control
 
-[travis-url]: https://travis-ci.com/furkot/map-circle-control
-[travis-image]: https://img.shields.io/travis/com/furkot/map-circle-control.svg
+[build-url]: https://github.com/furkot/map-circle-control/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/furkot/map-circle-control/check.yaml?branch=main
 
-[deps-image]: https://img.shields.io/david/furkot/map-circle-control.svg
-[deps-url]: https://david-dm.org/furkot/map-circle-control
+[deps-image]: https://img.shields.io/librariesio/release/npm/map-circle-control
+[deps-url]: https://libraries.io/npm/map-circle-control
 
-[deps-dev-image]: https://img.shields.io/david/dev/furkot/map-circle-control.svg
-[deps-dev-url]: https://david-dm.org/furkot/map-circle-control?type=dev
 
 [mapbox-icontrol]: https://www.mapbox.com/mapbox-gl-js/api/#icontrol
 [mapbox-gl]: https://www.mapbox.com/mapbox-gl-js

@@ -9,13 +9,14 @@ lint:
 	./node_modules/.bin/jshint *.js lib test
 
 test:
-	./node_modules/.bin/tape test/*js
+	node --test
 
 build/index.js: $(SRC)
-	./node_modules/.bin/browserify \
-		--debug \
-		--require ./index.js:$(PROJECT) \
-		--outfile $@
+	./node_modules/.bin/esbuild \
+		--bundle \
+		--global-name=makeCircle \
+		--outfile=$@ \
+		index.js
 
 clean:
 	rm -rf build

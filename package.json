@@ -7,7 +7,10 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "furkot/map-circle-control",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkot/map-circle-control.git"
+  },
   "license": "MIT",
   "keywords": [
     "map-circle-control",
@@ -20,11 +23,10 @@
     "component-emitter": "^1.2.1"
   },
   "devDependencies": {
-    "browserify": "^16.2.2",
-    "jsdom": "^16.2.2",
-    "jsdom-global": "^3.0.2",
-    "jshint": "^2.9.5",
-    "tape": "~5"
+    "@pirxpilot/jshint": "^3.0.1",
+    "esbuild": "^0.19.11",
+    "jsdom": "^23.2.0",
+    "jsdom-global": "^3.0.2"
   },
   "scripts": {
     "test": "make check"
