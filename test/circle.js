@@ -1,11 +1,9 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-
-require('jsdom-global')();
+import assert from 'node:assert/strict';
+import test from 'node:test';
 
 window.matchMedia = () => ({ matches: false });
 
-const makeCircle = require('../lib/circle');
+import makeCircle from '../lib/circle.js';
 
 document.body.innerHTML = '<div class="container"></div>';
 

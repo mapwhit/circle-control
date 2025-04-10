@@ -1,6 +1,6 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-const { meters2pixels, pixels2meters } = require('../lib/distance');
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { meters2pixels, pixels2meters } from '../lib/distance.js';
 
 // assume we are at 60 degrees N === 200px
 // 1000 pixels - 1 degree ~ 556600 meters 60 degrees latitude

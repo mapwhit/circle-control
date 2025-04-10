@@ -11,6 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/furkot/map-circle-control.git"
   },
+  "type": "module",
+  "main": "./lib/map-circle-control.js",
   "license": "MIT",
   "keywords": [
     "map-circle-control",
@@ -32,7 +34,6 @@
     "test": "make check"
   },
   "files": [
-    "index.js",
     "lib"
   ]
 }
