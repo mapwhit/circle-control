@@ -13,11 +13,9 @@ function fromGeo([lat]) {
   return [lat * 1000, 200];
 }
 
-
-let map = { fromGeo, toGeo };
+const map = { fromGeo, toGeo };
 
 test('distance', async function (t) {
-
   await t.test('meters to pixels', function () {
     assert.equal(meters2pixels(5000, [150, 200], map), 90);
   });
@@ -25,6 +23,4 @@ test('distance', async function (t) {
   await t.test('pixels to meters', function () {
     assert.equal(pixels2meters(250, [150, 200], map), 13899);
   });
-
 });
-

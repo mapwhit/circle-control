@@ -23,7 +23,7 @@
     "component-emitter": "^1.2.1"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "^3.0.1",
+    "@biomejs/biome": "^1.9.4",
     "esbuild": "^0.19.11",
     "jsdom": "^23.2.0",
     "jsdom-global": "^3.0.2"

@@ -12,13 +12,12 @@ document.body.innerHTML = '<div class="container"></div>';
 test('map-circle-control - create DOM nodes', function () {
   const container = document.querySelector('.container');
 
-  let circle = makeCircle();
+  const circle = makeCircle();
   circle.addTo(container);
   circle.center = [250, 200];
   circle.radius = 175;
 
-
-  let c = document.querySelector('.container .circle');
+  const c = document.querySelector('.container .circle');
 
   assert.equal(c.childNodes.length, 5, 'circle should have 5 child elements');
   assert.ok(c.style, 'circle should have style property');
