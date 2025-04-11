@@ -66,12 +66,11 @@
     <label>Y<input type='number' name='y' value="200"></label>
   <form>
   <script type="text/javascript">
-    const makeCircle = require('map-circle-control');
     const map = {
       getContainer:  () => document.querySelector('.container')
     };
     const form = document.querySelector('form');
-    let circle = makeCircle({
+    let circle = _mc.mapCircleControl({
       center: [ 250, 200 ],
       radius: 175
     });
