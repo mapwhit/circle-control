@@ -1,4 +1,11 @@
 
+2.0.0 / 2025-04-11
+==================
+
+ * assume `setDragImage` is supported by all browsers
+ * transition to ESM
+ * use `biome` instead of `jshint`
+
 1.1.2 / 2024-01-11
 ==================
 
