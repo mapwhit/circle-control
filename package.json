@@ -11,6 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/furkot/map-circle-control.git"
   },
+  "type": "module",
+  "main": "./lib/map-circle-control.js",
   "license": "MIT",
   "keywords": [
     "map-circle-control",
@@ -20,19 +22,18 @@
     "search"
   ],
   "dependencies": {
-    "component-emitter": "^1.2.1"
+    "component-emitter": "~2"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "^3.0.1",
-    "esbuild": "^0.19.11",
-    "jsdom": "^23.2.0",
+    "@biomejs/biome": "^1.9.4",
+    "esbuild": "^0.25.2",
+    "jsdom": "~26",
     "jsdom-global": "^3.0.2"
   },
   "scripts": {
     "test": "make check"
   },
   "files": [
-    "index.js",
     "lib"
   ]
 }

@@ -1,26 +1,29 @@
 PROJECT = map-circle-control
-SRC = index.js $(wildcard lib/*.js)
+SRC = $(wildcard lib/*.js)
 
 all: check compile
 
 check: lint test
 
 lint:
-	./node_modules/.bin/jshint *.js lib test
+	./node_modules/.bin/biome ci
+
+format:
+	./node_modules/.bin/biome check --fix
 
 test:
-	node --test
+	node --require jsdom-global/register --test
 
 build/index.js: $(SRC)
 	./node_modules/.bin/esbuild \
 		--bundle \
-		--global-name=makeCircle \
+		--global-name=_mc \
 		--outfile=$@ \
-		index.js
+		lib/map-circle-control.js
 
 clean:
 	rm -rf build
 
 compile: build/index.js
 
-.PHONY: check lint test
+.PHONY: check format lint test

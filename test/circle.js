@@ -1,24 +1,21 @@
-const test = require('node:test');
-const assert = require('node:assert/strict');
-
-require('jsdom-global')();
+import assert from 'node:assert/strict';
+import test from 'node:test';
 
 window.matchMedia = () => ({ matches: false });
 
-const makeCircle = require('../lib/circle');
+import makeCircle from '../lib/circle.js';
 
 document.body.innerHTML = '<div class="container"></div>';
 
 test('map-circle-control - create DOM nodes', function () {
   const container = document.querySelector('.container');
 
-  let circle = makeCircle();
+  const circle = makeCircle();
   circle.addTo(container);
   circle.center = [250, 200];
   circle.radius = 175;
 
-
-  let c = document.querySelector('.container .circle');
+  const c = document.querySelector('.container .circle');
 
   assert.equal(c.childNodes.length, 5, 'circle should have 5 child elements');
   assert.ok(c.style, 'circle should have style property');
