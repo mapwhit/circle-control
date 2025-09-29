@@ -1,6 +1,6 @@
 {
   "name": "@mapwhit/circle-control",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Draggable circle to be used with map renderer.",
   "author": {
     "name": "Damian Krzeminski",
