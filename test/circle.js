@@ -7,7 +7,7 @@ import makeCircle from '../lib/circle.js';
 
 document.body.innerHTML = '<div class="container"></div>';
 
-test('map-circle-control - create DOM nodes', function () {
+test('map-circle-control - create DOM nodes', () => {
   const container = document.querySelector('.container');
 
   const circle = makeCircle();

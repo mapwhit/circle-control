@@ -15,12 +15,12 @@ function fromGeo([lat]) {
 
 const map = { fromGeo, toGeo };
 
-test('distance', async function (t) {
-  await t.test('meters to pixels', function () {
+test('distance', async t => {
+  await t.test('meters to pixels', () => {
     assert.equal(meters2pixels(5000, [150, 200], map), 90);
   });
 
-  await t.test('pixels to meters', function () {
+  await t.test('pixels to meters', () => {
     assert.equal(pixels2meters(250, [150, 200], map), 13899);
   });
 });
