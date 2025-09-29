@@ -1,5 +1,5 @@
 {
-  "name": "map-circle-control",
+  "name": "@mapwhit/circle-control",
   "version": "2.0.0",
   "description": "Draggable circle to be used with map renderer.",
   "author": {
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/furkot/map-circle-control.git"
+    "url": "git+https://github.com/mapwhit/circle-control.git"
   },
   "type": "module",
-  "main": "./lib/map-circle-control.js",
+  "exports": "./lib/map-circle-control.js",
   "license": "MIT",
   "keywords": [
     "map-circle-control",

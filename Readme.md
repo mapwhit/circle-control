@@ -2,7 +2,7 @@
 [![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
 
-# map-circle-control
+# @mapwhit/circle-control
 
 Draggable circle to be used with map renderer.
 Click [here][demo-page] to see the demo page.
@@ -10,13 +10,13 @@ Click [here][demo-page] to see the demo page.
 ## Install
 
 ```sh
-$ npm install --save map-circle-control
+$ npm install --save @mapwhit/circle-control
 ```
 
 ## Usage in standard container
 
 ```js
-const makeCircle = require('map-circle-control');
+const makeCircle = require('@mapwhit/circle-control');
 
 let circle = makeCircle({
   container: document.querySelector('.map'), // dom element to which circle will be added
@@ -76,14 +76,14 @@ circle.geoCenter = [0.1278, 51.5074]; // London
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/map-circle-control
-[npm-url]: https://npmjs.org/package/map-circle-control
+[npm-image]: https://img.shields.io/npm/v/@mapwhit/circle-control
+[npm-url]: https://npmjs.org/package/@mapwhit/circle-control
 
-[build-url]: https://github.com/furkot/map-circle-control/actions/workflows/check.yaml
-[build-image]: https://img.shields.io/github/actions/workflow/status/furkot/map-circle-control/check.yaml?branch=main
+[build-url]: https://github.com/mapwhit/circle-control/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/mapwhit/circle-control/check.yaml?branch=main
 
-[deps-image]: https://img.shields.io/librariesio/release/npm/map-circle-control
-[deps-url]: https://libraries.io/npm/map-circle-control
+[deps-image]: https://img.shields.io/librariesio/release/npm/@mapwhit/circle-control
+[deps-url]: https://libraries.io/npm/@mapwhit%2Fcircle-control
 
 
 [mapbox-icontrol]: https://www.mapbox.com/mapbox-gl-js/api/#icontrol
