@@ -88,4 +88,4 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 
 [mapbox-icontrol]: https://www.mapbox.com/mapbox-gl-js/api/#icontrol
 [mapbox-gl]: https://www.mapbox.com/mapbox-gl-js
-[demo-page]: https://furkot.github.io/map-circle-control/
+[demo-page]: https://mapwhit.github.io/circle-control/
