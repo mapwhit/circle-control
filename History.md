@@ -1,4 +1,11 @@
 
+3.0.0 / 2025-12-12
+==================
+
+ * update github actions
+ * fix default export
+ * fix demo page link
+
 2.0.1 / 2025-09-29
 ==================
 
