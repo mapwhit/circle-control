@@ -16,7 +16,7 @@ $ npm install --save @mapwhit/circle-control
 ## Usage in standard container
 
 ```js
-const makeCircle = require('@mapwhit/circle-control');
+import makeCircle from '@mapwhit/circle-control';
 
 let circle = makeCircle({
   container: document.querySelector('.map'), // dom element to which circle will be added
@@ -47,7 +47,7 @@ Cirle is using `getContainer`, `project`, and `unproject` methods only.
 ```js
 
 let map = new mapboxgl.Map(/* options */);
-const makeCircle = require('map-circle-control');
+import makeCircle from '@mapwhit/circle-control';
 
 let circle = makeCircle({
   center: [ 250, 200 ],                      // offset in the container
